@@ -50,7 +50,6 @@ with st.sidebar:
 # ---------- MODELO ----------
 chat_model = ChatOpenAI(
     model="deepseek-chat",
-    api_key=os.environ.get("DEEPSEEK_API_KEY"),
     base_url="https://api.deepseek.com",
     temperature=temperature,
     streaming=True
